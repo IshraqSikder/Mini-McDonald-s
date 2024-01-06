@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="container">
+  <h1 class="text-center text-warning mt-5 bg-dark">McDonald's <span class="text-primary">Restaurant</span></h1>
+  <div class="row align-items-center mt-5">
+    <div class="col-md-6">
+      <h1>About Us - McDonald's</h1>
+      <p>
+        McDonald's Corporation is an American multinational fast food chain, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States. They rechristened their business as a hamburger stand, and later turned the company into a franchise, with the Golden Arches logo being introduced in 1953 at a location in Phoenix, Arizona. In 1955, Ray Kroc, a businessman, joined the company as a franchise agent and in 1961 bought out the McDonald's. Previously headquartered in Oak Brook, Illinois, it moved to nearby Chicago in June 2018. McDonald's is also a real estate company through its ownership of around 70% of restaurant buildings and 45% of the underlying land.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img
+        src="{% static 'crown_point_mcdonalds.jpeg' %}"
+        alt="Restaurant Image"
+        class="img-fluid" />
+    </div>
+  </div>
+</div>
+{% endblock content %}

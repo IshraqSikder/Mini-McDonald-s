@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+<div class="row container mx-auto my-auto">
+  {% for i in dict.categories %}
+  <div class="col-lg-3 mt-5 mb-3">
+    <div class="card" style="width: 18rem">
+      <img src="{{i.strCategoryThumb}}" class="card-img-top" alt="picture" />
+      <div class="card-body">
+        <h5 class="card-title">{{i.idCategory}}. {{i.strCategory}}</h5>
+        <p class="card-text">{{ i.strCategoryDescription|truncatewords:10 }}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock content %}
